@@ -1,4 +1,4 @@
-#include "header.c"
+#include "header.h"
 int main(){
     printf("***********************************\n");
     printf("********     DigiLib       ********\n");
