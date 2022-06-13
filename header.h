@@ -45,3 +45,4 @@ int login(char testnom[1000], char testprenom[1000], char testmdp[100], int conn
 int recupUser(char testnom[1000], char testprenom[1000]);
 void SaveUser(char nom[1000], char prenom[1000] , char* mdp , int role);
 int connexion_user();
+Book return_book(Book book);
