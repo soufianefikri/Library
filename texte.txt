@@ -1,0 +1,2 @@
+nom prenom mdp rôle
+a a 1a-A 1
