@@ -152,7 +152,7 @@ void tri_alphabetiquetitle(Book tab[],int taille){// the function shows the user
 // /////////////////////////////////////////////////////////////////////////
 //                        fonctions de base 1                            //
 // ////////////////////////////////////////////////////////////////////////
-void showbooks(Book book[],int taille){
+void showbooks(Book book[],int taille){// this function is meant to show the user all the available books depending on how he want to see them
     int type=0;
     int catego;
     while (1!=0){
@@ -211,7 +211,7 @@ void showbooks(Book book[],int taille){
     }
 } 
 
-Book borrowbook(User user,Book book){
+Book borrowbook(User user,Book book){// enable the user to borrow one book and do the necessary changes like the status, the name of the borrower and the time of return
     book.status=1;  
     book.hreturn=timeh();
     book.minreturn=timem();
@@ -358,13 +358,13 @@ void new_library(Book book[],int numofbook){// at the end of the app the code wr
     fclose(file);
 }
 
-Book return_book(Book book){
+Book return_book(Book book){// changes the status of a book from 1(borrowed) to 0(available) with the changes of the time of return 
     book.status=0;
     book.hreturn=0;
     book.minreturn=0;
     return book;
 }
-void check_userbooks(User user,Book book[], int numofbook){
+void check_userbooks(User user,Book book[], int numofbook){// sees what books the user has already borrowed and if it is too late to return them or not
     for(int i;i<numofbook;i++){
         int check;
         int check2;
